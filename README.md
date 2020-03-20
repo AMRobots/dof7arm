@@ -13,3 +13,8 @@ Thông số kỹ thuật:
 $ source devel/setup.bash
 $ roslaunch dof7_arm_model view_dof7_arm.launch
 ```
+# MÔ PHỎNG ROBOT TRÊN GAZEBO
+```
+$ roslaunch dof7_arm_model dof7_arm_gazebo_control.launch
+$ rostopipub -1 /dof7_arm_model/joint4_position_controller/command  std_msgs/Float64 2.0
+```
